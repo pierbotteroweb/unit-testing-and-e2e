@@ -1,8 +1,8 @@
 import { CapitalizePipe } from './capitalize.pipe';
 
 describe('CapitalizePipe', () => {
-  it('create an instance', () => {
-    const pipe = new CapitalizePipe();
-    expect(pipe).toBeTruthy();
+  const pipe = new CapitalizePipe();
+  it('should capitalize the first letter', () => {
+    expect(pipe.transform('angular')).toBe('Angular');
   });
 });
